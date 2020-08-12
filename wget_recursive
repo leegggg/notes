@@ -35,3 +35,14 @@ The options are:
 
     --no-clobber: don't overwrite any existing files (used in case the download is interrupted and resumed).
 
+```
+wget -E -H -k -p http://textbook.s-anand.net/ncert/class-xii/chemistry/hello-this-first-chapter
+```
+
+* `-E`: Append .html to the file name if it is an HTML file but doesn't end in .html or similar
+
+* `-H`: Download files from other hosts, too
+
+* `-k`: After downloading convert any link in it so they point to the downloaded files
+
+* `-p`: Download anything the page needs for proper offline viewing
