@@ -17,5 +17,7 @@ ffmpeg -i .\[TorrentCouch.com].The.Good.Doctor.S01E01.720p.WEB-HD.x264.ESubs.mkv
 
 # windows capt
  ffmpeg -f dshow -i audio="Stereo Mix (2- Realtek High Definition Audio)"  -f gdigrab  -i desktop -framerate 12 -c:v h264_qsv -c:a aac output.mkv
+ 
+ffmpeg -i '.\Genshin Impact - _Ganyu- A Night in Liyue Harbor_ Trailer (4K 60FPS).webm' -ss 30.5 -t 4.5 -vf "crop=997:2160:1450:0,scale=1080:2340,fps=fps=6" Ganyu_%d.png
 
 ```
