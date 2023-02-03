@@ -3,7 +3,7 @@
 ## py sqlalamery
 
 ```bash
-\s+(.+?)\s([inud].+?)+\s.+
+\s+(.+?)\s([inud].+?)\s.+
     $1 = Column('$1', __$2__)   #$0
     
 __int__
