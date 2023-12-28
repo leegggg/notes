@@ -10,4 +10,7 @@ gs -dNOPAUSE -dBATCH -sDEVICE=png16m -sOutputFile="Pic-%d.png" input.pdf
 gs -dNOPAUSE -dBATCH -sDEVICE=png16m –dFirstPage=3 –dLastPage=4 -sOutputFile="Pic-%d.png" input.pdf
 
 for file in $(ls *.png);do convert $file -gaussian-blur 0x8 ../$file; done
+
+convert -density 300 -define pdf:use-cropbox=true foo.pdf "foo-%03d.png"
+
 ```
