@@ -13,4 +13,7 @@ for file in $(ls *.png);do convert $file -gaussian-blur 0x8 ../$file; done
 
 convert -density 300 -define pdf:use-cropbox=true foo.pdf "foo-%03d.png"
 
+# resize pdf
+gs  -sDEVICE=pdfwrite  -sPAPERSIZE=a4  -dFIXEDMEDIA  -dPDFFitPage  -dCompatibilityLevel=1.4 -o a4_23016-24-0022-01.pdf 23016-24-0022-01.pdf
+
 ```
